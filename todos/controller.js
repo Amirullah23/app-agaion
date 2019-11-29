@@ -3,7 +3,7 @@ const {Todos} = require("../models")
 module.exports = {
 getAll : async (req, res) => {
     try {
-        const result = await Todos.find({}).populate("users");
+        const result = await Todos.find({}).populate("user");
 
         res.status(200).json({pesan: "show data todos", data: result
     })
