@@ -5,15 +5,15 @@ const Schema = mongoose.Schema
 const todoSchema = new Schema({
     todo : {
         type : String,
-        require : true
+        required : true
     },
     name : {
         type : String,
-        require : true
+        required : true
     },
     email : {
         type : String,
-        require : true
+        required : true
 
     },
     user: {
