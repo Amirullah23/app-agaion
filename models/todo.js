@@ -7,15 +7,6 @@ const todoSchema = new Schema({
         type : String,
         required : true
     },
-    name : {
-        type : String,
-        required : true
-    },
-    email : {
-        type : String,
-        required : true
-
-    },
     user: {
         type: Schema.Types.ObjectId,
         ref: "users"
