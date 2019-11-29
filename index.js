@@ -9,6 +9,9 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
+app.use("/", (req, res) => {
+    res.send("wellcome to API")
+})
 app.use("/user", require("./user"))
 app.use("/todo", require("./todos"))
 
